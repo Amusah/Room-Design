@@ -14,3 +14,79 @@ body {
   font-family: "League Spartan", sans-serif;
   font-weight: SemiBold;
 }
+
+header {
+  min-height: 50vh;
+  background: url("/images/mobile-image-hero-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  padding: 4rem 2rem;
+}
+header .nav-logo {
+  margin: 0 auto;
+}
+header .nav-links {
+  display: none;
+}
+header .nav-links li {
+  list-style: none;
+}
+header .slider-btn-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+header .slider-btn-1 .next-slide, header .slider-btn-1 .prev-slide {
+  background-color: hsl(0, 0%, 0%);
+  padding: 0.8rem 1.5rem;
+}
+
+.intro {
+  position: relative;
+}
+.intro .text-box {
+  padding: 4rem 3rem;
+}
+.intro .text-box .intro-text {
+  color: hsl(0, 0%, 63%);
+  padding: 1.5rem 0;
+  line-height: 1.2;
+}
+.intro .text-box .order-btn {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.intro .text-box .order-btn:hover p {
+  color: hsl(0, 0%, 63%);
+}
+.intro .text-box .order-btn:hover .arrow {
+  fill: hsl(0, 0%, 63%);
+}
+.intro .text-box .order-btn .arrow {
+  margin-left: 2rem;
+}
+.intro .slider-btn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.intro .slider-btn-2 .next-slide, .intro .slider-btn-2 .prev-slide {
+  background-color: hsl(0, 0%, 0%);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+.intro .slider-btn-2 .next-slide:hover, .intro .slider-btn-2 .prev-slide:hover {
+  background-color: hsl(0, 0%, 63%);
+}
