@@ -52,6 +52,7 @@ header .nav-links .nav-btn {
 header .nav-links li {
   list-style: none;
   text-transform: lowercase;
+  cursor: pointer;
 }
 header .slider-btn-1 {
   position: absolute;
