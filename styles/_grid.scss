@@ -1,0 +1,39 @@
+@media screen and (min-width: 420px){
+    header{
+        .hamburger, .close-btn{
+            display: none;
+        }
+
+        nav{
+            width: 90%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .nav-logo{
+            margin-right: 5rem;
+        }
+
+        .nav-links{
+            position: static;
+            width: 80%;
+            right: 0;
+            background-color: transparent;
+            padding: 0;
+            color: $White;
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    header{
+        background: url('/images/desktop-image-hero-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        nav{
+            width: 70%;
+        }
+
+    }
+}

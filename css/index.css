@@ -25,18 +25,22 @@ header {
 header nav {
   width: 100%;
   display: flex;
-  padding: 4rem 2rem;
+  align-items: center;
+  padding: 4rem 3rem;
   position: relative;
 }
 header .hamburger, header .close-btn {
   cursor: pointer;
+}
+header .close-btn {
+  margin-right: 2rem;
 }
 header .nav-logo {
   margin: 0 auto;
 }
 header .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: hsl(0, 0%, 100%);
   padding: 4rem 2rem;
   width: 100%;
@@ -44,7 +48,7 @@ header .nav-links {
   top: 0;
   right: 100%;
   z-index: 5;
-  transition: transform 0.6s ease;
+  transition: transform 0.8s ease;
 }
 header .nav-links .nav-btn {
   margin-right: 2rem;
@@ -64,8 +68,7 @@ header .slider-btn-1 .next-slide, header .slider-btn-1 .prev-slide {
   background-color: hsl(0, 0%, 0%);
   padding: 0.8rem 1.5rem;
 }
-
-.nav-open {
+header .nav-open {
   transform: translateX(100%);
 }
 
@@ -139,4 +142,37 @@ header .slider-btn-1 .next-slide, header .slider-btn-1 .prev-slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 420px) {
+  header .hamburger, header .close-btn {
+    display: none;
+  }
+  header nav {
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  header .nav-logo {
+    margin-right: 5rem;
+  }
+  header .nav-links {
+    position: static;
+    width: 80%;
+    right: 0;
+    background-color: transparent;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media screen and (min-width: 500px) {
+  header {
+    background: url("/images/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  header nav {
+    width: 70%;
+  }
 }
